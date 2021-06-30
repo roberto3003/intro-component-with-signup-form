@@ -5,12 +5,13 @@
 --accent: seagreen;
 --text-dark: dimgrey;
 --text-light: white;
---padding: 1rem;
+--padding: 1em;
 --radius: 1rem;
 }
 
 * {
   font-family: system-ui;
+  gap: var(--padding);
 }
 
 /* *** Colors *** */ 
@@ -45,8 +46,21 @@ form > * {
   margin: calc(var(--padding)/2) 0;
 }
 
-input, .right-side>*, .cta  {
+input, .right-side>*, .cta, .container  {
   border-radius: var(--radius);
+}
+
+.container {
+  padding: var(--padding);
+}
+
+.user-action {
+padding: var(--padding) 0;
+}
+
+.price, .cta>* {
+padding: var(--padding)  calc(var(--padding)*2);
+text-align: center;
 }
 
 
