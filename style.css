@@ -1,17 +1,100 @@
+:root {
+--primary: orangered;
+--secondary: darkslateblue;
+--light: whitesmoke;
+--accent: seagreen;
+--text-dark: dimgrey;
+--text-light: white;
+--padding: 1em;
+}
 
+* {
+  font-family: system-ui;
+}
+
+html, footer {
+background-color: royalblue; 
+}
+
+.wrapper, .user-action {
+background-color: var(--light)
+}
+
+.price {
+background-color: var(--secondary);
+}
+
+.cta {
+  background-color: var(--accent);
+}
+
+form, .terms {
+  color: var(--text-dark);
+}
+
+body, .cta> p {
+  margin: 0;
+}
+
+.flex> *, .flex-column> * {
+  padding : var(--padding);
+}
+
+body {
+  align-content: space-between;
+  font-size: clamp(1rem, 1.5vw,  30px) ;
+  letter-spacing: 0.2em;
+  background-color: var(--ligth); 
+  color: var(--text-light);
+}
+
+p {
+  line-height: 1.5;
+}
+
+input {
+  font-size: inherit;
+}
+
+small {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+ article {
+   align-content: center;
+ }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
  }
 
+ .flex > * {
+   flex-grow: 1;
+   flex-basis: 5em;
+ }
+
  .flex-column {
    display: flex;
    flex-direction: column;
+   justify-content: space-evenly;
  }
 
  .wrapper {
+  justify-content: center;
   align-items: center;
-  align-content: center;
+  min-height: 100vh;
+ }
+
+ .container {
+   background-color: var(--primary);
+   background-image: url('./images/bg-intro-desktop.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: clamp(320px, 80vw, 1800px);
  }
 
