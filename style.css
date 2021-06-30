@@ -5,12 +5,15 @@
 --accent: seagreen;
 --text-dark: dimgrey;
 --text-light: white;
---padding: 1em;
+--padding: 1rem;
+--radius: 1rem;
 }
 
 * {
   font-family: system-ui;
 }
+
+/* *** Colors *** */ 
 
 html, footer {
 background-color: royalblue; 
@@ -32,6 +35,8 @@ form, .terms {
   color: var(--text-dark);
 }
 
+/* *** Margins and Padding *** */
+
 body, .cta> p {
   margin: 0;
 }
@@ -39,6 +44,17 @@ body, .cta> p {
 .flex> *, .flex-column> * {
   padding : var(--padding);
 }
+
+form > * {
+  margin: calc(var(--padding)/2) 0;
+}
+
+input, .right-side>*, .cta  {
+  border-radius: var(--radius);
+}
+
+
+/* *** Tags *** */
 
 body {
   align-content: space-between;
